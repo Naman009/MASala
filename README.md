@@ -1,12 +1,11 @@
 # 🧠 MASala AI — Your Multi-Agent Recipe Assistant!
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bf5ad15b-39cb-4c50-98a6-a760e1890352"/>
+  <img src="https://github.com/user-attachments/assets/b212c9d0-6c5b-4aac-ae1a-7cfcccc03aff"/>
 </p>
 
 > 🍛 MASala: Multi-Agent AI That Cooks Up Recipes Just for You  
 >   ~ From fridge to feast, MASALA plans it all.
-
 ---
 
 ## 🏆 Hackathon Submission
