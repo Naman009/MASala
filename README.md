@@ -130,14 +130,6 @@ npm start
 
 ---
 
-## 🖼 Recipe Images
-
-Each recipe has a unique image generated with:
-
-```
-https://image.pollinations.ai/prompt/{recipe_title}
-```
-
 ---
 
 ## 📄 License
