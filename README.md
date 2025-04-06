@@ -7,6 +7,12 @@
 > 🍛 MASala: Multi-Agent AI That Cooks Up Recipes Just for You  
 >   ~ From fridge to feast, MASALA plans it all.
 ---
+## 👥 Team Members
+
+- 👨‍💻 Dhyey Joshi  
+- 👨‍💻 Ashutosh Gupta  
+- 👩‍💻 Vedika Shinde  
+- 👨‍💻 Naman Shah
 
 ## 🏆 Hackathon Submission
 
