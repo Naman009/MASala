@@ -1,7 +1,7 @@
 # 🧠 MASala AI — Your Multi-Agent Recipe Assistant!
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b212c9d0-6c5b-4aac-ae1a-7cfcccc03aff"/>
+  <img src="https://github.com/user-attachments/assets/34765962-3f82-4432-9d4f-059b270753dd"/>
 </p>
 
 > 🍛 MASala: Multi-Agent AI That Cooks Up Recipes Just for You  
@@ -53,7 +53,7 @@ All agents **communicate through shared data**, orchestrated via **CrewAI**, ens
 ## 🧱 Application Architecture
 
 <p align="center">
-  <img src="(https://github.com/user-attachments/assets/6922b66d-6664-4c67-9d4b-f62cea47743c" width="700"/>
+  <img src="https://github.com/user-attachments/assets/b212c9d0-6c5b-4aac-ae1a-7cfcccc03aff"/>
 </p>
 
 ---
