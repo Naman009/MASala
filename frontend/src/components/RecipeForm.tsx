@@ -133,7 +133,7 @@ const RecipeForm = ({ onSearch }: { onSearch: (data: RecipeFormData) => void }) 
 
           {/* Fridge Items */}
           <div className="space-y-2">
-            <Label htmlFor="fridgeItems" className="text-base">What's in your fridge?</Label>
+            <Label htmlFor="fridgeItems" className="text-base">What's your Fridge inventory or Kitchen pantry!</Label>
             <Textarea 
               id="fridgeItems" 
               placeholder="Enter your ingredients separated by commas" 

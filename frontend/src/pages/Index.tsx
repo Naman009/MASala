@@ -1,4 +1,4 @@
-
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Header from "@/components/Header";
 import RecipeForm, { RecipeFormData } from "@/components/RecipeForm";
@@ -6,7 +6,7 @@ import RecipeCard, { Recipe } from "@/components/RecipeCard";
 import RecipeDetails from "@/components/RecipeDetails";
 import AIAgentsProcessing from "@/components/AIAgentsProcessing";
 import { toast } from "sonner";
-
+import LogsModal from "@/components/LogsModal";
 
 const fetchRecipesFromBackend = async (formData: RecipeFormData): Promise<Recipe[]> => {
   const form = new FormData();
@@ -40,9 +40,14 @@ const Index = () => {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [showAgentsProcessing, setShowAgentsProcessing] = useState(false);
+  const [logsData, setLogsData] = useState([]);
+  const [fullJson, setFullJson] = useState({});
+  const [showLogs, setShowLogs] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleSearch = async (formData: RecipeFormData) => {
-    setIsLoading(true);
+    //setIsLoading(true);
     setShowResults(false);
     setShowAgentsProcessing(true);
     
@@ -52,17 +57,22 @@ const Index = () => {
       const data = await fetchRecipesFromBackend(formData);
       console.log(data);
       console.log(data['recipes']);
+      console.log(data['logs'])
       console.log(data['recipes'].recipes);
+      setLogsData(data['logs'])
+      setFullJson(data['logs'])
       setRecipes(data["recipes"].recipes);
       
       // Show success toast
       toast.success("Recipes found based on your criteria!");
+      setShowResults(true);
     } catch (error) {
       console.error("Error fetching recipes:", error);
       toast.error("Failed to find recipes. Please try again.");
-      setShowAgentsProcessing(false);
+      //setShowAgentsProcessing(false);
     } finally {
       setIsLoading(false);
+      setShowAgentsProcessing(false);
     }
   };
 
@@ -98,6 +108,10 @@ const Index = () => {
     }
   };  
 
+  const handleLogClick = async () => {
+    setShowLogs(true);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <div className="food-pattern-header py-8">
@@ -131,7 +145,7 @@ const Index = () => {
               </div>
             )}
 
-            {showAgentsProcessing && !isLoading && (
+            {showAgentsProcessing && (
               <AIAgentsProcessing 
                 isVisible={showAgentsProcessing} 
                 onComplete={handleAgentsComplete} 
@@ -150,7 +164,7 @@ const Index = () => {
             )}
 
 
-            {showResults && !isLoading && (
+            {showResults && !showAgentsProcessing && (
               <div>
                 <h2 className="text-2xl font-bold mb-6">Recommended Recipes</h2>
                 
@@ -166,7 +180,7 @@ const Index = () => {
               </div>
             )}
 
-            {!showResults && !showAgentsProcessing && !isLoading && (
+            {!showResults && !showAgentsProcessing && (
               <div className="flex items-center justify-center h-full animate-fade-in">
               <video
               src="/homeVideo.mp4"  // Place your video in the public folder
@@ -175,7 +189,7 @@ const Index = () => {
               muted
               playsInline
               className="w-full max-w-4xl rounded-2xl"
-              style={{ background: "transparent", maxHeight: "600px" }}
+              style={{ background: "transparent", maxHeight: "550px" }}
             />
             </div>
             )}
@@ -188,6 +202,32 @@ const Index = () => {
         isOpen={isDetailsOpen}
         onClose={() => setIsDetailsOpen(false)}
       />
+
+{showResults && !showAgentsProcessing && (
+        <>
+        <button
+        onClick={handleLogClick} // ✅ Use navigate instead of router.push
+        className="fixed bottom-6 right-6 px-5 py-3 bg-primary text-white font-semibold rounded-full shadow-lg hover:bg-primary/90 transition-all z-50"
+      >
+        View Logs
+      </button>
+      {showLogs && (
+        <LogsModal
+          logs={logsData}
+          fullJson={fullJson}
+          onClose={() => setShowLogs(false)}
+        />
+      )}
+      {/* Open External URL Button */}
+    <button
+      onClick={() => window.open("https://smith.langchain.com/o/faef8860-9b0b-41f6-951c-902f1da8509d/dashboards/dc85c6e2-891b-4c3c-99e6-b943a2d79862", "_blank")}
+      className="fixed bottom-6 right-44 px-5 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-all z-50"
+    >
+      Insiteful Dashboard
+    </button>
+      </>
+      )}
+      
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Timer } from '../components/Timer';
+import AgentFlowGraph from "./AgentFlowGraph";
 
 import { 
   Dialog,
@@ -90,6 +91,10 @@ const Dashboard = () => {
         </div>
 
         <main className="flex-grow">
+        <div className="p-6">
+          <h2 className="text-2xl font-semibold mb-4">AI Agent Workflow</h2>
+          <AgentFlowGraph />
+        </div>
           <div className="max-w-7xl mx-auto py-4 px-4">
             <div className="flex flex-col lg:flex-row gap-8">
 

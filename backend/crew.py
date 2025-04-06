@@ -76,6 +76,8 @@ def crew(dietaryRestriction, allergies, mealType, cuisine, fridgeItems):
             process=Process.sequential,
             verbose=True,
             planning=True,
+            max_iter=10,
+            max_rpm=40,
             callbacks=[tracer]
         )
 
