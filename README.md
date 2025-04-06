@@ -16,24 +16,28 @@
 
 ## 🏆 Hackathon Submission
 
-This project was built for the **Multi-Agent System Challenge**, where teams had to:
-- Build a system with **at least 3 distinct agents**.
-- Ensure agents **collaborate, negotiate, and coordinate** autonomously.
-- Provide a **dashboard to visualize agent progress and communication**.
+This project was built for the **Multi-Agent System Challenge**, where teams were tasked with:
 
-## 🧠 Use Case
-
-**Smart Culinary Companion for Personalized Cooking**
-
-Our Multi-Agent System intelligently assists users in discovering healthy, personalized recipes using real-time inputs such as available ingredients, dietary restrictions, and allergies. With agents collaborating as an **Analyzer**, **Nutritionist**, **Chef**, and **Presenter**, the system ensures safe, delicious, and nutrition-aware meals — all generated automatically.
+- Designing a system with **at least 3 distinct autonomous agents**.
+- Ensuring agents **collaborate, negotiate, and coordinate** without manual intervention.
+- Building a **dashboard or visualization** to showcase agent progress and communication.
 
 ---
 
-## 🌍 Category Impact
+### 🧠 Use Case: Smart Culinary Companion for Personalized Cooking
 
-**Health & Lifestyle | AI for Personalized Wellness**
+Our Multi-Agent System intelligently assists users in discovering healthy, personalized recipes using real-time inputs such as available ingredients, dietary restrictions, and allergies. With agents collaborating as an **Analyzer**, **Nutritionist**, **Chef**, and **Presenter**, the system ensures safe, delicious, and nutrition-aware meals — all generated automatically using modern AI.
 
-By leveraging AI agents to simplify healthy cooking at home, our system reduces cognitive load, promotes food safety (via allergy filtering), and encourages better dietary habits. It's a modern take on accessible, everyday wellness — powered by collaborative intelligence.
+---
+
+### 🌍 Category Impact: Health & Lifestyle | AI for Personalized Wellness
+
+By leveraging AI agents to simplify healthy cooking at home, our system:
+- Reduces cognitive load on users,
+- Promotes food safety through allergy and dietary filtering,
+- Encourages smarter, personalized eating habits.
+
+It’s a modern take on accessible wellness — powered by **collaborative intelligence**.
 
 
 ---
