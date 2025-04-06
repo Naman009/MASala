@@ -1,3 +1,5 @@
+langsmith
+python-multipart
 phidata 
 python-dotenv
 yfinance
