@@ -1,41 +1,61 @@
-
 # 🧠 MASala AI — Your Multi-Agent Recipe Assistant!
 
-<p align ="center">
+<p align="center">
   <img src="https://user-images.githubusercontent.com/placeholder/logo.png" width="150"/>
 </p>
 
-> 🍛 MASala: Multi-Agent System for Autonomous Lifestyle Assistant  
-> Your personalized smart cooking assistant powered by CrewAI, Gemini, LangChain, and LangSmith.
+> 🍛 MASala: Multi-Agent AI That Cooks Up Recipes Just for You  
+> From fridge to feast, MASALA plans it all.
+
+---
+
+## 🏆 Hackathon Submission
+
+This project was built for the **Multi-Agent System Challenge**, where teams had to:
+- Build a system with **at least 3 distinct agents**.
+- Ensure agents **collaborate, negotiate, and coordinate** autonomously.
+- Provide a **dashboard to visualize agent progress and communication**.
+
+**Use Case Chosen:** Smart Recipe Recommendation System with allergy, preference, and dietary filtering  
+**Category Impact:** Personalized Wellness, Lifestyle Assistant
 
 ---
 
 ## 📌 About the Project
 
-**MASala AI** is a powerful, multi-agent system (MAS) designed to recommend personalized recipes based on user preferences like ingredients, allergies, and dietary restrictions.
+**MASala AI** is a creative, multi-agent system that generates **personalized recipes** for users by coordinating a set of intelligent agents. It adapts to user preferences, dietary needs, and allergies, delivering healthy and delicious options.
 
-### 👨‍🍳 The Agents Behind the Magic
-- 🧪 **Web Analyzer Agent** – Scrapes and analyzes top trending recipes from the web.
-- 🥦 **Nutritionist Agent** – Filters ingredients based on allergies or restrictions.
-- 🍳 **Chef Agent** – Crafts creative, delicious recipes.
-- 🗣 **Presenter Agent** – Formats output in readable JSON and generates shareable visuals.
+---
+
+## 👨‍🍳 The Agents Behind the Magic
+
+| Agent               | Role                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| 🧪 Web Analyzer      | Scrapes and analyzes trending recipes across the web.                |
+| 🥦 Nutritionist      | Filters ingredients based on dietary restrictions and allergies.     |
+| 🍳 Chef              | Crafts creative, personalized recipes based on filtered inputs.      |
+| 🗣 Presenter         | Generates readable recipe JSON and visual prompts for sharing.       |
+
+All agents **communicate through shared data**, orchestrated via **CrewAI**, ensuring a seamless flow and conflict-free coordination.
 
 ---
 
 ## 🧰 Tech Stack
 
-- ⚙️ **CrewAI** – Orchestrates agent logic and flow
-- 🧠 **Gemini (Google AI)** – Powers intelligent decision-making for agents
-- 🔗 **LangChain + LangSmith** – Enables memory, tracing, and observability
-- 🎨 **Pollinations API** – Generates AI-based food images
-- 🚀 **FastAPI** – Serves backend API
-- 💡 **React.js** – Frontend interface
+- ⚙️ **CrewAI** – Orchestrates agent behavior and logic.
+- 🧠 **Gemini (Google AI)** – Powers intelligent agent reasoning.
+- 🔗 **LangChain + LangSmith** – Memory, observability, and traceable runs.
+- 🎨 **Pollinations API** – Generates AI-based food imagery.
+- 🚀 **FastAPI** – Powers the backend REST API.
+- 💡 **React.js** – Interactive frontend dashboard.
 
 ---
 
-## 📸 Architecture Overview
+## 🧱 Application Architecture
 
-![Architecture](https://user-images.githubusercontent.com/placeholder/architecture.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/placeholder/architecture.png" width="700"/>
+</p>
 
 ---
 
@@ -48,11 +68,11 @@ git clone https://github.com/your-username/masala-ai.git
 cd masala-ai
 ```
 
-### 2. Set Up Your Environment
+### 2. Environment Setup
 
-Create a `.env` file in the root directory and add:
+Create a `.env` file with the following:
 
-```bash
+```env
 LANGSMITH_TRACING=true
 LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
 LANGSMITH_API_KEY="your_langsmith_key"
@@ -61,22 +81,22 @@ GOOGLE_API_KEY="your_google_api_key"
 SERPER_API_KEY="your_serper_key"
 ```
 
-### 3. Create Python Environment & Install
+### 3. Install Dependencies
 
 ```bash
 python -m venv masala_env
-source masala_env/bin/activate   # or `masala_env\Scripts\activate` on Windows
-pip install -r requirements.txt
+source masala_env/bin/activate  # Windows: masala_env\Scripts\activate
+pip install -r backend/requirements.txt
 ```
 
-### 4. Run Backend Server
+### 4. Run the Backend
 
 ```bash
 cd backend
 uvicorn main:app --reload
 ```
 
-### 5. Run Frontend
+### 5. Start the Frontend
 
 ```bash
 cd frontend
@@ -90,22 +110,25 @@ npm start
 
 | Endpoint       | Description                             |
 |----------------|-----------------------------------------|
-| `/generate`    | POST user inputs and get recipe JSON    |
-| `/logs`        | Get recent LangSmith agent run logs     |
-| `/trace`       | Returns public LangSmith trace link     |
+| `POST /generate`    | Send user input → Get back recipe JSON   |
+| `GET /logs`         | View LangSmith logs of recent agent runs |
+| `GET /trace`        | Fetch public trace link for debugging     |
 
 ---
 
-## 📈 Real-Time Observability
+## 📊 Dashboard Features
 
-- Logs are saved live using `langsmith_logs.py`
-- Public trace link can be shared with `get_trace.py`
+- ✅ View active agents and their current tasks.
+- 📡 Real-time communication and trace logs.
+- 🍽️ Final JSON response and shareable recipe visual from Pollinations AI.
+- 📊 Agent status: *Working*, *Pending*, *Completed*
 
 ---
 
-## 🖼 Image Generation
+## 🖼 Recipe Images
 
-Recipes come with:
+Each recipe has a unique image generated with:
+
 ```
 https://image.pollinations.ai/prompt/{recipe_title}
 ```
@@ -114,7 +137,7 @@ https://image.pollinations.ai/prompt/{recipe_title}
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
 ---
 
@@ -123,4 +146,4 @@ This project is licensed under the MIT License.
 - [CrewAI](https://crewai.io)
 - [LangSmith](https://smith.langchain.com)
 - [Gemini by Google AI](https://deepmind.google/technologies/gemini)
-- [Pollinations API](https://pollinations.ai)
+- [Pollinations AI](https://pollinations.ai)
