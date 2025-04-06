@@ -21,8 +21,20 @@ This project was built for the **Multi-Agent System Challenge**, where teams had
 - Ensure agents **collaborate, negotiate, and coordinate** autonomously.
 - Provide a **dashboard to visualize agent progress and communication**.
 
-**Use Case Chosen:** Smart Recipe Recommendation System with allergy, preference, and dietary filtering  
-**Category Impact:** Personalized Wellness, Lifestyle Assistant
+## 🧠 Use Case
+
+**Smart Culinary Companion for Personalized Cooking**
+
+Our Multi-Agent System intelligently assists users in discovering healthy, personalized recipes using real-time inputs such as available ingredients, dietary restrictions, and allergies. With agents collaborating as an **Analyzer**, **Nutritionist**, **Chef**, and **Presenter**, the system ensures safe, delicious, and nutrition-aware meals — all generated automatically.
+
+---
+
+## 🌍 Category Impact
+
+**Health & Lifestyle | AI for Personalized Wellness**
+
+By leveraging AI agents to simplify healthy cooking at home, our system reduces cognitive load, promotes food safety (via allergy filtering), and encourages better dietary habits. It's a modern take on accessible, everyday wellness — powered by collaborative intelligence.
+
 
 ---
 
