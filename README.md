@@ -75,7 +75,7 @@ All agents **communicate through shared data**, orchestrated via **CrewAI**, ens
 ## 🧱 Application Architecture
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b212c9d0-6c5b-4aac-ae1a-7cfcccc03aff"/>
+  <img src="https://github.com/user-attachments/assets/5e21f7b5-328a-470a-9c26-5e603a912fa6"/>
 </p>
 
 ---
