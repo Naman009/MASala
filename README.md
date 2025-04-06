@@ -39,7 +39,9 @@ By leveraging AI agents to simplify healthy cooking at home, our system:
 
 It’s a modern take on accessible wellness — powered by **collaborative intelligence**.
 
-![1_W5UMY1fN6vTn1eVfPcj7pQ](https://github.com/user-attachments/assets/69443d40-eb10-4620-b6d3-84cc085d3cad)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69443d40-eb10-4620-b6d3-84cc085d3cad"/>
+</p>
 
 ---
 
