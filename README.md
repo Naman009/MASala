@@ -5,7 +5,7 @@
 </p>
 
 > 🍛 MASala: Multi-Agent AI That Cooks Up Recipes Just for You  
-> From fridge to feast, MASALA plans it all.
+>   ~ From fridge to feast, MASALA plans it all.
 
 ---
 
@@ -54,7 +54,7 @@ All agents **communicate through shared data**, orchestrated via **CrewAI**, ens
 ## 🧱 Application Architecture
 
 <p align="center">
-  <img src="![MAS_ala_Crewai](https://github.com/user-attachments/assets/d6aa3ce4-0281-4841-8ac4-2b7b3cecd8b9)" width="700"/>
+  <img src="https://github.com/user-attachments/assets/d6aa3ce4-0281-4841-8ac4-2b7b3cecd8b9" width="700"/>
 </p>
 
 ---
