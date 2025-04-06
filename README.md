@@ -69,8 +69,8 @@ All agents **communicate through shared data**, orchestrated via **CrewAI**, ens
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/masala-ai.git
-cd masala-ai
+git clone https://github.com/Naman009/MASala.git
+cd MASala
 ```
 
 ### 2. Environment Setup
@@ -106,7 +106,7 @@ uvicorn main:app --reload
 ```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
 ---
