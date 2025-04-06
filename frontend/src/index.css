@@ -1,0 +1,193 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 70% 90%;
+    --foreground: 30 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 30% 20%;
+
+    --primary: 85 40% 40%;
+    --primary-foreground: 40 70% 95%;
+
+    --secondary: 30 90% 80%;
+    --secondary-foreground: 30 30% 20%;
+
+    --muted: 40 30% 90%;
+    --muted-foreground: 30 20% 40%;
+
+    --accent: 40 30% 90%;
+    --accent-foreground: 30 30% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 70% 95%;
+
+    --border: 30 30% 80%;
+    --input: 30 30% 80%;
+    --ring: 30 30% 20%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 225 40% 15%;
+    --foreground: 210 40% 98%;
+
+    --card: 225 40% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 225 40% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 225 40% 15%;
+
+    --secondary: 48 90% 65%;
+    --secondary-foreground: 225 40% 15%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    background-image: url("/bottom-bg.jpg");
+  }
+
+  .font-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+}
+
+.food-pattern-header {
+  background-color: hsl(35, 90%, 80%);
+  background-image: url("/top-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0.8); opacity: 0; }
+  70% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+@font-face {
+  font-family: 'Regad';
+  src: url('/Regad.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FatheyaFood';
+  src: url('/FatheyaFood.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.welcome-illustration {
+  min-height: 400px;
+}
+
+.speech-bubble {
+  animation: bounce-in 0.8s ease-out 0.2s both;
+}
+
+.grandma-image {
+  animation: float 6s ease-in-out infinite;
+}
+
+.food-icons span {
+  display: inline-block;
+  animation: float 4s ease-in-out infinite;
+}
+
+.food-icons span:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.food-icons span:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.pulse {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.font-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.recipe-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.bg-food-cream {
+  background-color: #FFEFD1;
+}
+
+.bg-food-orange {
+  background-color: #F9B872;
+}
+
+.bg-food-orange-light {
+  background-color: #FFD8A9;
+}
+
+.text-food-brown {
+  color: #5E3F22;
+}
+
+.text-food-green {
+  color: #6A8E4E;
+}

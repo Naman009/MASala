@@ -1,0 +1,15 @@
+# Ignore Python
+__pycache__/
+*.pyc
+.env
+venv/
+output.json
+
+# Ignore Node modules
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+
+# Ignore system files
+.DS_Store
+*.log
