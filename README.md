@@ -14,14 +14,6 @@
 - 👩‍💻 Vedika Shinde  
 - 👨‍💻 Naman Shah
 
-## 🏆 Hackathon Submission
-
-This project was built for the **Multi-Agent System Challenge**, where teams were tasked with:
-
-- Designing a system with **at least 3 distinct autonomous agents**.
-- Ensuring agents **collaborate, negotiate, and coordinate** without manual intervention.
-- Building a **dashboard or visualization** to showcase agent progress and communication.
-
 ---
 
 ### 🧠 Use Case: Smart Culinary Companion for Personalized Cooking
@@ -48,6 +40,16 @@ It’s a modern take on accessible wellness — powered by **collaborative intel
 ## 📌 About the Project
 
 **MASala AI** is a creative, multi-agent system that generates **personalized recipes** for users by coordinating a set of intelligent agents. It adapts to user preferences, dietary needs, and allergies, delivering healthy and delicious options.
+
+## 🎥 Project Demo
+Watch MASala AI in action!
+👉 [Click here to view the demo on YouTube](https://www.youtube.com/watch?v=bwtq6kZqzOM)
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=bwtq6kZqzOM" target="_blank">
+    <img src="https://img.youtube.com/vi/bwtq6kZqzOM/hqdefault.jpg" alt="MASala AI Demo" width="50%" />
+  </a>
+</p>
 
 ---
 
