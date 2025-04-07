@@ -42,12 +42,12 @@ It’s a modern take on accessible wellness — powered by **collaborative intel
 **MASala AI** is a creative, multi-agent system that generates **personalized recipes** for users by coordinating a set of intelligent agents. It adapts to user preferences, dietary needs, and allergies, delivering healthy and delicious options.
 
 ## 🎥 Project Demo
-Watch MASala AI in action!
+Watch MASala AI in action!   
 👉 [Click here to view the demo on YouTube](https://www.youtube.com/watch?v=bwtq6kZqzOM)
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=bwtq6kZqzOM" target="_blank">
-    <img src="https://img.youtube.com/vi/bwtq6kZqzOM/hqdefault.jpg" alt="MASala AI Demo" width="50%" />
+    <img src="https://img.youtube.com/vi/bwtq6kZqzOM/hqdefault.jpg" alt="MASala AI Demo" width="50%"/>
   </a>
 </p>
 
